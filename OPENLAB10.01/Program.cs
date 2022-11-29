@@ -10,8 +10,13 @@ namespace Open_Lab_10._00
     {
         static void Main(string[] args)
         {
-            Book LOTR = new Book("Lord of the rings", 576);
-            Console.WriteLine(LOTR.Title);
+            Book LOTR = new Book();
+            LOTR.Title("Lord Of The Rings");
+            LOTR.Pages(576);
+            LOTR.Category("Fantasy");
+            LOTR.Author("J.R.R. Tolkien");
+            LOTR.ReleaseDate("29.7.1954");
+            LOTR.print();
         }
     }
 }
